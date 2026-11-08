@@ -89,3 +89,13 @@
 @media (prefers-reduced-motion:reduce){.wa-float{animation:none}}
 .map{margin-top:1.6rem;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:var(--green-100)}
 .map iframe{width:100%;height:100%;border:0;display:block}
+
+/* ===== v3.2: hero circle fix (clip reliably, fill the gear hole, tidy chips on phones) ===== */
+.hero-photo{inset:15%;border-radius:50%;clip-path:circle(50% at 50% 50%);isolation:isolate;transform:translateZ(0)}
+.hero-photo img{border-radius:50%}
+@media (max-width:560px){
+  .hero-art{width:min(80%,300px);margin-bottom:2.4rem}
+  .chip{font-size:.7rem;padding:.3rem .55rem .3rem .4rem;gap:.3rem}
+  .c1{left:-10%;top:0}.c2{right:-12%;top:52%}.c3{left:-8%;bottom:4%}
+  .hero-caption{font-size:.75rem;bottom:-1.6rem}
+}
