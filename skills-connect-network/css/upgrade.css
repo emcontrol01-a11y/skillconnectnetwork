@@ -99,3 +99,7 @@
   .c1{left:-10%;top:0}.c2{right:-12%;top:52%}.c3{left:-8%;bottom:4%}
   .hero-caption{font-size:.75rem;bottom:-1.6rem}
 }
+
+/* ===== v3.3: keep the photo centred in the gear. main.js nudged only the gear down on scroll,
+   so by the time the circle scrolled into view on a phone the photo sat off-centre. ===== */
+.gear{translate:none !important}
