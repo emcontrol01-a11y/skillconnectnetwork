@@ -119,3 +119,10 @@
 .gallery.tiles .g-item img{object-position:50% 40%}
 @media (max-width:900px){.gallery.tiles{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:560px){.gallery.tiles{grid-template-columns:repeat(2,1fr)}}
+
+/* Feature gallery: first photo spans two columns, 7 photos fill two even rows */
+.gallery.tiles.tiles-feature{grid-template-columns:repeat(4,1fr)}
+.gallery.tiles.tiles-feature .g-item{aspect-ratio:1/1}
+.gallery.tiles.tiles-feature .g-item:first-child{grid-column:span 2;aspect-ratio:auto}
+@media (max-width:900px){.gallery.tiles.tiles-feature{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:560px){.gallery.tiles.tiles-feature{grid-template-columns:repeat(2,1fr)}}
