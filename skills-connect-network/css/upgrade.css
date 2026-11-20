@@ -154,3 +154,43 @@
 .values.centered.c4 li{flex-basis:calc((100% - 3.6rem)/4)}
 @media (max-width:900px){.values.centered.c3 li,.values.centered.c4 li{flex-basis:calc((100% - 1.2rem)/2)}}
 @media (max-width:560px){.values.centered.c3 li,.values.centered.c4 li{flex-basis:100%}}
+
+/* Leader portraits */
+.gov-card.person{padding-top:1.6rem}
+.gov-photo{display:block;width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 30%;margin:0 auto 1rem;border:4px solid var(--green-100);box-shadow:0 8px 20px rgba(5,52,31,.15)}
+.gov-card:not(.person){display:flex;flex-direction:column;justify-content:center;align-items:center}
+
+/* Leadership team grid */
+.team{list-style:none;margin:2.2rem auto 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:1.4rem;max-width:1000px}
+.team .gov-card{flex:0 1 calc((100% - 2.8rem)/3);padding:1.8rem 1rem 1.6rem}
+.team .gov-photo{width:150px;height:150px}
+.team .gov-card h3{margin:.2rem 0 .6rem}
+.team .gov-tag{margin:0}
+@media (max-width:760px){.team .gov-card{flex-basis:calc((100% - 1.4rem)/2)}}
+@media (max-width:440px){.team .gov-card{flex-basis:100%}}
+
+/* Smocklane card blends with its dark logo background */
+.partner-grid li.smocklane{background:#121617;border-color:#121617}
+.partner-grid li.smocklane img{max-height:200px}
+
+/* Link to the full leadership page */
+.team-more{text-align:center;margin:2rem 0 0}
+
+/* Leadership page */
+.page-top{padding-top:clamp(2rem,4vw,3.5rem)}
+.back{margin:0 0 1.2rem}
+.back a{font-weight:600;color:var(--green-900)}
+.sec-head h1{margin:0;font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.05}
+.gov-tier.three{grid-template-columns:repeat(3,1fr)}
+.gov .gov-card.person{padding:1.4rem 1rem 1.3rem}
+.gov .gov-photo{width:120px;height:120px}
+.gov .gov-card.person h3{margin:.2rem 0 .6rem}
+.gov .gov-card.person .gov-tag{margin:0}
+@media (max-width:700px){.gov-tier.three{grid-template-columns:1fr}}
+
+/* Uniform partner cards: four per row, same height */
+.partner-grid li{flex:0 1 calc((100% - 4.5rem)/4);height:190px;padding:1rem}
+.partner-grid img{max-height:100%}
+.partner-grid li.dark img,.partner-grid li.smocklane img{max-height:100%;border-radius:6px}
+@media (max-width:900px){.partner-grid li{flex-basis:calc((100% - 1.5rem)/2)}}
+@media (max-width:480px){.partner-grid li{flex-basis:100%}}

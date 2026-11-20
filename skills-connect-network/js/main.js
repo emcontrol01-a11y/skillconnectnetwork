@@ -34,7 +34,7 @@
   // Contact form: opens the visitor's email app with the message filled in
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
-  form.addEventListener('submit', function (e) {
+  if (form) form.addEventListener('submit', function (e) {
     e.preventDefault();
     var bad = false;
     ['name', 'email', 'message'].forEach(function (id) {
