@@ -194,3 +194,18 @@
 .partner-grid li.dark img,.partner-grid li.smocklane img{max-height:100%;border-radius:6px}
 @media (max-width:900px){.partner-grid li{flex-basis:calc((100% - 1.5rem)/2)}}
 @media (max-width:480px){.partner-grid li{flex-basis:100%}}
+
+/* Captioned photo cards (each photo has its own event caption) */
+.gallery.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;align-items:start}
+.gallery.cap-grid figure{margin:0}
+.gallery.cap-grid img{position:static;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);cursor:zoom-in}
+.gallery.cap-grid figcaption{margin:.6rem .2rem 0;font-size:.92rem;line-height:1.4;color:var(--muted)}
+@media (max-width:900px){.gallery.cap-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.gallery.cap-grid{grid-template-columns:1fr}}
+
+/* Five captioned photos: one row on wide screens, centered rows below */
+.gallery.cap-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
+.gallery.cap-grid figure{flex:0 1 calc((100% - 4rem)/5)}
+@media (max-width:1000px){.gallery.cap-grid figure{flex-basis:calc((100% - 2rem)/3)}}
+@media (max-width:600px){.gallery.cap-grid figure{flex-basis:calc((100% - 1rem)/2)}}
+@media (max-width:420px){.gallery.cap-grid figure{flex-basis:100%}}
